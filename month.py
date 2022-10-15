@@ -9,20 +9,21 @@
 def month_association(month):
     # checks what number is associated with which month and displays the month
     months = {
-        1: print("1 is January."),
-        2: print("2 is February."),
-        3: print("3 is March."),
-        4: print("4 is April."),
-        5: print("5 is May."),
-        6: print("6 is June."),
-        7: print("7 is July."),
-        8: print("8 is August."),
-        9: print("9 is September."),
-        10: print("10 is October."),
-        11: print("11 is November."),
-        12: print("12 is December.")
+        1: "1 is January.".format(month),
+        2: "2 is February.".format(month),
+        3: "3 is March.".format(month),
+        4: "4 is April.".format(month),
+        5: "5 is May.".format(month),
+        6: "6 is June.".format(month),
+        7: "7 is July.".format(month),
+        8: "8 is August.".format(month),
+        9: "9 is September.".format(month),
+        10: "10 is October.".format(month),
+        11: "11 is November.".format(month),
+        12: "12 is December.".format(month),
     }
     return months.get(month, "Error. {} does not represent a month.".format(month))
+
 
 def main():
     # variables
@@ -30,6 +31,7 @@ def main():
 
     # prints out month association
     print(month_association(month_num))
+
 
 if __name__ == "__main__":
     main()
