@@ -20,7 +20,7 @@ def month_association(month):
         9: "9 is September.",
         10: "10 is October.",
         11: "11 is November.",
-        12: "12 is December."
+        12: "12 is December.",
     }
     return months.get(month, "Error. {} does not represent a month.".format(month))
 
